@@ -8,7 +8,7 @@ const Orders = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const res = await axios.get("tradzen-backend-production.up.railway.app/api/orders", {
+        const res = await axios.get("https://tradzen-backend-production.up.railway.app/api/orders", {
           withCredentials: true,
         });
         setOrders(res.data);

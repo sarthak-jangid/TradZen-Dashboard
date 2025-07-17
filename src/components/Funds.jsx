@@ -11,7 +11,7 @@ const Funds = ({ userName }) => {
     const fetchFunds = async () => {
       try {
         const res = await axios.get(
-          "tradzen-backend-production.up.railway.app/api/funds/my-funds",
+          "https://tradzen-backend-production.up.railway.app/api/funds/my-funds",
           {
             withCredentials: true, // important for sending cookies
           }
@@ -34,14 +34,14 @@ const Funds = ({ userName }) => {
 
     try {
       const { data: keyData } = await axios.get(
-        "tradzen-backend-production.up.railway.app/api/payments/get-razorpay-key",
+        "https://tradzen-backend-production.up.railway.app/api/payments/get-razorpay-key",
         {
           withCredentials: true, // important for sending cookies
         }
       );
 
       const { data } = await axios.post(
-        "tradzen-backend-production.up.railway.app/api/payments/create-order",
+        "https://tradzen-backend-production.up.railway.app/api/payments/create-order",
         { amount: Number(amount) }, // always convert to number
         { withCredentials: true }
       );
@@ -61,7 +61,7 @@ const Funds = ({ userName }) => {
 
           try {
             await axios.post(
-              "tradzen-backend-production.up.railway.app/api/payments/update-funds",
+              "https://tradzen-backend-production.up.railway.app/api/payments/update-funds",
               { amount: Number(amount) },
               {
                 withCredentials: true, //  This sends cookies with the request
@@ -105,7 +105,7 @@ const Funds = ({ userName }) => {
 
     try {
       await axios.post(
-        "tradzen-backend-production.up.railway.app/api/funds/withdraw",
+        "https://tradzen-backend-production.up.railway.app/api/funds/withdraw",
         { amount: Number(amount) },
         { withCredentials: true }
       );
