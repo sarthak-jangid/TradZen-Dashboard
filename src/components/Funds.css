@@ -1,0 +1,129 @@
+.funds-container {
+  max-width: 900px;
+  margin: 30px auto;
+  margin-top: 0px;
+  margin-bottom: 0;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.funds-header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.funds-header .headline {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.funds-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn.green {
+  background-color: #2ecc71;
+  border-radius: 8px;
+  padding-top: 11px;
+  padding-bottom: 8px;
+}
+
+.btn.green:hover {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.btn.blue {
+  background-color: #3498db;
+  border-radius: 8px;
+  padding-top: 11px;
+  padding-bottom: 8px;
+}
+
+.btn.blue:hover {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+.funds-card {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
+}
+
+.funds-card h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.funds-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.fund-item {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+
+
+.fund-item.highlight {
+  background-color: #d4edda;
+  color: #155724;
+  font-weight: bold;
+}
+
+.fund-item .label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.fund-item .value {
+  font-size: 18px;
+}
+.funds-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* adds spacing between input and buttons */
+  flex-wrap: wrap; /* optional: makes it responsive on smaller screens */
+}
+
+.funds-actions input[type="number"] {
+  padding: 10px 16px;
+  font-size: 16px;
+  border: 1px solid #d1d5db; /* light gray border */
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  width: 180px;
+  margin-right: 12px;
+  margin-bottom: -10px;
+}
+
+.funds-actions input[type="number"]:focus {
+  border-color: #007bff; /* blue border on focus */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}

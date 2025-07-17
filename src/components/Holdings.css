@@ -1,0 +1,97 @@
+/* Holdings.css */
+
+.holdings-wrapper {
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9fafb;
+  border-radius: 15px;
+}
+
+.holdings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.refresh-btn {
+  background-color: #006aff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.refresh-btn:hover {
+  background-color: #0050cc;
+}
+
+.table-container {
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1.5rem;
+}
+
+.holdings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.holdings-table th,
+.holdings-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.holdings-table thead {
+  background-color: #f6f6f6;
+}
+
+.sell-btn {
+  background-color: #ff4d4f;
+  color: white;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.sell-btn:hover {
+  background-color: #d9363e;
+}
+
+.summary-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  width: 200px;
+  text-align: center;
+}
+
+.card h4 {
+  margin-bottom: 5px;
+}
+
+.profit {
+  color: green;
+}
+
+.loss {
+  color: crimson;
+}

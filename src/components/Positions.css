@@ -1,0 +1,55 @@
+/* Positions.css */
+
+.positions-wrapper {
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9fafb;
+  border-radius: 15px;
+}
+
+.positions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.positions-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.positions-table-container {
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+}
+
+.positions-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.positions-table th,
+.positions-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.positions-table thead {
+  background-color: #f6f6f6;
+}
+
+.profit {
+  color: green;
+  font-weight: 500;
+}
+
+.loss {
+  color: crimson;
+  font-weight: 500;
+}
