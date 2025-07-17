@@ -15,10 +15,10 @@ const Menu = ({ userName }) => {
 
   const handleLogout = async () => {
     try {
-      await axios.get("http://localhost:3002/logout", {
+      await axios.get("tradzen-backend-production.up.railway.app/logout", {
         withCredentials: true,
       });
-      window.location.href = "http://localhost:5173/?logout=true";
+      window.location.href = "https://trad-zen-frontend-hcz2.vercel.app/?logout=true";
     } catch (err) {
       console.error("Logout failed", err);
     }
@@ -73,7 +73,7 @@ const Menu = ({ userName }) => {
         {isDropdownOpen && (
           <div className="dropdown">
             <p
-              onClick={() => (window.location.href = "http://localhost:5173/")}
+              onClick={() => (window.location.href = "https://trad-zen-frontend-hcz2.vercel.app/")}
             >
               🏠 Go to Home
             </p>

@@ -14,7 +14,7 @@
         try {
           console.log("work f")
           const { data } = await axios.get(
-            "http://localhost:3002/userVerification",
+            "tradzen-backend-production.up.railway.app/userVerification",
             {
               withCredentials: true, // Send the cookie
             }
@@ -22,14 +22,14 @@
 
           if (!data.status) {
             // Redirect if not authenticated
-            window.location.href = "http://localhost:5173/login";
+            window.location.href = "https://trad-zen-frontend-hcz2.vercel.app/login";
           } else {
             // console.log("Logged in as:", data.user);
             setIsExist(true);
           }
         } catch (err) {
           console.error("Verification failed", err.message);
-          window.location.href = "http://localhost:5173/login";
+          window.location.href = "https://trad-zen-frontend-hcz2.vercel.app/login";
         } finally {
           setLoading(false);
         }

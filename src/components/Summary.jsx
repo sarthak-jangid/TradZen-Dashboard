@@ -8,12 +8,12 @@ const Summary = ({ userName }) => {
 
   const fetchHoldings = () => {
     axios
-      .get("http://localhost:3002/allHoldings", { withCredentials: true })
+      .get("tradzen-backend-production.up.railway.app/allHoldings", { withCredentials: true })
       .then((res) => setAllHoldings(res.data.holdings));
   };
   const fetchFunds = async () => {
     try {
-      const res = await axios.get("http://localhost:3002/api/funds/my-funds", {
+      const res = await axios.get("tradzen-backend-production.up.railway.app/api/funds/my-funds", {
         withCredentials: true, // important for sending cookies
       });
       setFunds(res.data.funds);

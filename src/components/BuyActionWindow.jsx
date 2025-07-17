@@ -34,7 +34,7 @@ const BuyActionWindow = ({ uid, stock }) => {
 
     try {
       await axios.post(
-        "http://localhost:3002/api/newOrder",
+        "tradzen-backend-production.up.railway.app/api/newOrder",
         {
           name: uid,
           qty: qty,

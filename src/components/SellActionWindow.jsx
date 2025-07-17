@@ -30,7 +30,7 @@ const SellActionWindow = ({ uid, stock }) => {
     try {
       // Your sell API call here
       const res = await axios.post(
-        "http://localhost:3002/api/newOrder",
+        "tradzen-backend-production.up.railway.app/api/newOrder",
         {
           name: uid,
           qty: qty,

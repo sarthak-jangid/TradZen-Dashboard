@@ -8,7 +8,7 @@ const Home = () => {
   // Function to fetch holdings
   const fetchHoldings = () => {
     axios
-      .get("http://localhost:3002/allHoldings", {
+      .get("tradzen-backend-production.up.railway.app/allHoldings", {
         withCredentials: true,
       })
       .then((res) => {

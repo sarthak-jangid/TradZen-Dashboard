@@ -16,7 +16,7 @@ const Holdings = () => {
 
   const fetchHoldings = () => {
     axios
-      .get("http://localhost:3002/allHoldings", { withCredentials: true })
+      .get("tradzen-backend-production.up.railway.app/allHoldings", { withCredentials: true })
       .then((res) => setAllHoldings(res.data.holdings));
   };
 
