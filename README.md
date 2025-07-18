@@ -1,12 +1,57 @@
-# React + Vite
+# TradZen Dashboard – Stock Trading User Interface
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **authenticated dashboard** for TradZen, a stock trading web app. Built with **React.js**, **Material UI**, and **Chart.js**, it allows users to view their portfolio, track holdings, and manage funds using **Razorpay (test mode)** integration.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live App
 
-## Expanding the ESLint configuration
+🔗 [Open site](https://tradzen-frontend-1.onrender.com/)  
+⚠️ _Note: May take a few seconds to load due to Render free-tier cold start._
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- **React.js** – Frontend framework
+- **MUI (Material UI)** – UI components and design system
+- **Chart.js** – For rendering user-friendly data visualizations
+- **Axios** – For making HTTP requests
+- **React Router DOM** – Frontend routing
+- **React Toastify** – Toast notifications
+- **React Cookie** – Managing JWT tokens stored in HTTP-only cookies
+- **Razorpay (test mode)** – For simulating fund addition
+
+---
+
+## ✨ Features
+
+- Authenticated dashboard with JWT and secure cookies
+- Razorpay integration (test mode) for adding virtual funds
+- Holdings and transaction history view
+- Interactive charts using Chart.js
+- Toast messages for feedback (success/failure)
+- Responsive design with Material UI
+
+---
+
+## 🔧 Installation
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/sarthak-jangid/tradzen-dashboard.git
+
+cd tradzen-dashboard
+
+npm install
+
+npm run dev
+
+
+## 🔗 Related Repositories
+
+- 🔧 [TradZen Backend (Node.js + Express + MongoDB)](https://github.com/sarthak-jangid/tradzen-backend) *(API, auth, and database)*
+- 📊 [TradZen Dashboard (React.js + MUI + Razorpay)](https://github.com/sarthak-jangid/tradzen-dashboard) *(authenticated user dashboard)*
+- 🌐 [TradZen Frontend (This Repo)](https://github.com/sarthak-jangid/tradzen-frontend)  *(public site)*
+```
