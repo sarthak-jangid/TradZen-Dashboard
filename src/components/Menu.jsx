@@ -15,7 +15,7 @@ const Menu = ({ userName }) => {
 
   const handleLogout = async () => {
     try {
-      await axios.get("https://tradzen-backend.onrender.com/logout", {
+      await axios.get("https://tradzen-backend-production.up.railway.app/logout", {
         withCredentials: true,
       });
       window.location.href = "https://tradzen-frontend-1.onrender.com/?logout=true";

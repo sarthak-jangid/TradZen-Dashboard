@@ -8,12 +8,12 @@ const Summary = ({ userName }) => {
 
   const fetchHoldings = () => {
     axios
-      .get("https://tradzen-backend.onrender.com/allHoldings", { withCredentials: true })
+      .get("https://tradzen-backend-production.up.railway.app/allHoldings", { withCredentials: true })
       .then((res) => setAllHoldings(res.data.holdings));
   };
   const fetchFunds = async () => {
     try {
-      const res = await axios.get("https://tradzen-backend.onrender.com/api/funds/my-funds", {
+      const res = await axios.get("https://tradzen-backend-production.up.railway.app/api/funds/my-funds", {
         withCredentials: true, // important for sending cookies
       });
       setFunds(res.data.funds);

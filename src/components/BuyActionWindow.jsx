@@ -34,7 +34,7 @@ const BuyActionWindow = ({ uid, stock }) => {
 
     try {
       await axios.post(
-        "https://tradzen-backend.onrender.com/api/newOrder",
+        "https://tradzen-backend-production.up.railway.app/api/newOrder",
         {
           name: uid,
           qty: qty,

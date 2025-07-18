@@ -14,7 +14,7 @@
         try {
           console.log("work f")
           const { data } = await axios.get(
-            "https://tradzen-backend.onrender.com/userVerification",
+            "https://tradzen-backend-production.up.railway.app/userVerification",
             {
               withCredentials: true, // Send the cookie
             }

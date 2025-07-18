@@ -7,7 +7,7 @@ const Positions = () => {
 
   useEffect(() => {
     axios
-      .get("https://tradzen-backend.onrender.com/allPositions")
+      .get("https://tradzen-backend-production.up.railway.app/allPositions")
       .then((res) => setPositions(res.data))
       .catch((err) => console.error("Failed to fetch positions:", err));
   }, []);
